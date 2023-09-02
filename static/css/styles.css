@@ -27,6 +27,8 @@
 
 #sub_top_first {
     font-family: 'Dancing Script', cursive;
+    position: relative;
+    top: -40px;
 }
 
 .top_second {
@@ -40,13 +42,30 @@
 
 .payment_container {
     border-radius: 3px;
-
+   border: none;
+    color: white;
+    /* padding: 16px 50px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: blue;  
+    border-radius: 4px;
+    background-image: linear-gradient(179deg,#236EE1 0,#465AF0 100%);
+    position: absolute;
+    height: 70px;
+    width: 300px;
+    top: 550px;
+    left: 50px;
 }
 
 .payment_button {
     border: none;
     color: white;
-    padding: 16px 32px;
+    padding: 16px 50px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -63,8 +82,19 @@
     background-image: linear-gradient(179deg, blue 0,#465AF0 100%);
     color: white;
 }
+
+.glow {
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+    text-align: left;
+    position: relative;
+    top: -50px;
+  }
+  
+
 .quote_container {
-    position: absolute;
+    position: relative;
     bottom: 400px;
     left: -200px;
     right: 400px;
@@ -128,12 +158,12 @@
     top: 200px;
     /* margin-left: 50px;
     margin-top: 40px; */
-    animation: mymove_1 5s infinite;
+    /* animation: mymove_1 5s infinite; */
 }
 
 .box_1 {
     position: relative;
-    margin-left: 50px;
+    margin-left: -100px;
     scale: 40%;
     top: -100px;
 }
@@ -159,14 +189,14 @@
 
 .aim {
     color:black ;
-    font-family: 'Lumanosimo', cursive;
+    /* font-family: 'Lumanosimo', cursive; */
     padding-right: 100px;
     padding-left: 20px;
     display: table;
     top: -90px;
 
     position: relative;
-    animation: mymove 5s infinite;
+    /* animation: mymove 5s infinite; */
 }
 
 
@@ -190,6 +220,11 @@
 }
 
 
+@keyframes mymove_3 {
+    from {left: 900px;}
+    to {left: -100px;}
+}
+
 .flex-container {
     display: flex;
 }
@@ -204,10 +239,54 @@
     margin-right: 20px;
 } 
 
+.whatsapp {
+    position: absolute;
+    scale: 4%;
+    top: -467px;
+    left: -290px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.whatsapp:hover {
+    background-image: linear-gradient(179deg, b#465AF0 0,#465AF0 100%);
+    color: white;
+    scale: 5%;
+}
+
+.contact {
+    position: relative;
+    left: -50px;
+    top: 10px;
+}
+
+.email {
+    position: absolute;
+    scale: 13%;
+    top: -220px;
+    left: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.email:hover {
+    background-image: linear-gradient(179deg, white 0,white-space 100%);
+    color: white;
+    scale: 17%;
+}
+
 .partners_container {
     background-color: white;
     position: relative;
     top: 120px;
+
+}
+
+.partners_container_animation {
+    background-color: white;
+    position: relative;
+    top: 120px;
+    animation: mymove_3 60s infinite;
     
 }
 
@@ -223,7 +302,7 @@
 .flex_partners_container {
     position: relative;
     display: flex;
-    padding-left: 100px;
+    padding-left: 10px;
     top: -150px;
 }
 
@@ -327,7 +406,7 @@
 .outreach_animation {
     position: relative;
     top: 250px;
-    animation: mymove_2 60s infinite;
+    animation: mymove_2 90s infinite;
 
 }
 
